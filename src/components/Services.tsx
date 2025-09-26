@@ -8,9 +8,18 @@ const services = [
     title: "Website",
     description:
       "Website responsif dan modern dengan desain vintage untuk meningkatkan kehadiran digital bisnismu.",
-    icon: <Laptop className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />,
+    icon: (
+      <Laptop className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />
+    ),
     tech: ["React", "Next.js", "Tailwind CSS", "Laravel", "Flask"],
-    types: ["Landing Page Website", "Website Sekolah", "Blog", "Portfolio", "Web App", "Website Wedding"],
+    types: [
+      "Company Profile",
+      "E-commerce",
+      "Blog",
+      "Portfolio",
+      "Web App",
+      "SPK",
+    ],
     duration: "2-6 minggu",
     priceRange: "Mulai dari Rp 150.000",
   },
@@ -18,19 +27,23 @@ const services = [
     title: "Mobile App",
     description:
       "Aplikasi mobile berbasis Android/iOS dengan performa tinggi dan desain yang elegan.",
-    icon: <Smartphone className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />,
-    tech: ["React Native", "Flutter", "Kotlin"],
-    types: ["Aplikasi Bisnis", "Aplikasi Sistem Informasi", "Aplikasi SPK berbasis Mobile"],
+    icon: (
+      <Smartphone className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />
+    ),
+    tech: ["React Native", "Flutter", "Swift", "Kotlin"],
+    types: ["Aplikasi Bisnis", "E-commerce", "Sosial Media", "Game"],
     duration: "4-10 minggu",
-    priceRange: "Mulai dari Rp 200.000",
+    priceRange: "Mulai dari Rp 300.000",
   },
   {
     title: "Desktop App",
     description:
       "Aplikasi desktop yang powerful dan mudah digunakan untuk berbagai kebutuhan bisnismu.",
-    icon: <Monitor className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />,
+    icon: (
+      <Monitor className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />
+    ),
     tech: ["Electron", "Qt", "JavaFX", "WPF"],
-    types: ["Aplikasi Bisnis", "Aplikasi Sistem Informasi", "Aplikasi SPK berbasis Desktop"],
+    types: ["Aplikasi Bisnis", "Alat Produktivitas", "Game"],
     duration: "3-8 minggu",
     priceRange: "Mulai dari Rp 250.000",
   },
@@ -44,10 +57,12 @@ export default function Services() {
     >
       <div className="text-center mb-12">
         <Reveal>
-          <h2 className="text-4xl font-retro mb-4 font-semibold">Layanan Kami</h2>
+          <h2 className="text-4xl font-retro mb-4 font-bold">
+            Layanan Kami
+          </h2>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="font-vintage text-lg text-brown/80 max-w-2xl mx-auto">
+          <p className="font-retro text-lg text-brown/80 max-w-2xl mx-auto">
             Ralta menyediakan berbagai solusi digital untuk mendukung kebutuhan
             bisnis kamu dengan gaya vintage modern yang elegan.
           </p>
@@ -60,7 +75,7 @@ export default function Services() {
           <Reveal key={i} delay={i * 0.2}>
             <div className="group p-6 rounded-2xl shadow-md bg-white hover:bg-amber-100 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center h-full">
               <div className="mb-4">{s.icon}</div>
-              <h3 className="text-2xl font-retro mb-3 font-semibold">{s.title}</h3>
+              <h3 className="text-2xl mb-3 font-semibold">{s.title}</h3>
               <p className="font-vintage text-brown/80 mb-4">{s.description}</p>
 
               {/* Tech */}
@@ -95,17 +110,15 @@ export default function Services() {
                 </ul>
               </div>
 
-              {/* Duration */}
-              <div className="mt-auto w-full text-left font-vintage text-brown/80">
+              {/* Duration & Price */}
+              <div className="w-full text-left font-vintage text-brown/80">
                 <p>
                   <span className="font-semibold">Durasi:</span> {s.duration}
                 </p>
               </div>
               {/* Price */}
-              <div className=">
-                <p clasName="text-xl font-semibold">
-                  {s.priceRange}
-                </p>
+              <div className="text-xl text-center mt-auto font-vintage text-brown/80">
+                <p>{s.priceRange}</p>
               </div>
             </div>
           </Reveal>

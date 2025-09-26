@@ -14,11 +14,11 @@ const services = [
     tech: ["React", "Next.js", "Tailwind CSS", "Laravel", "Flask"],
     types: [
       "Company Profile",
-      "E-commerce",
+      "Website Sistem Informasi",
       "Blog",
       "Portfolio",
       "Web App",
-      "SPK",
+      "Aplikasi SPK berbasis Web",
     ],
     duration: "2-6 minggu",
     priceRange: "Mulai dari Rp 150.000",
@@ -30,8 +30,8 @@ const services = [
     icon: (
       <Smartphone className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />
     ),
-    tech: ["React Native", "Flutter", "Swift", "Kotlin"],
-    types: ["Aplikasi Bisnis", "E-commerce", "Sosial Media", "Game"],
+    tech: ["React Native", "Flutter", "Kotlin"],
+    types: ["Aplikasi Bisnis", "Aplikasi Sistem Informasi", "Aplikasi SPK berbasis Mobile"],
     duration: "4-10 minggu",
     priceRange: "Mulai dari Rp 300.000",
   },
@@ -43,7 +43,7 @@ const services = [
       <Monitor className="w-10 h-10 text-brown transition-transform duration-300 group-hover:scale-110" />
     ),
     tech: ["Electron", "Qt", "JavaFX", "WPF"],
-    types: ["Aplikasi Bisnis", "Alat Produktivitas", "Game"],
+    types: ["Aplikasi Bisnis", "Aplikasi Sistem Informasi", "Aplikasi SPK berbasis Desktop"],
     duration: "3-8 minggu",
     priceRange: "Mulai dari Rp 250.000",
   },
@@ -62,7 +62,7 @@ export default function Services() {
           </h2>
         </Reveal>
         <Reveal delay={0.2}>
-          <p className="font-retro text-lg text-brown/80 max-w-2xl mx-auto">
+          <p className="font-vintage text-lg text-brown/80 max-w-2xl mx-auto">
             Ralta menyediakan berbagai solusi digital untuk mendukung kebutuhan
             bisnis kamu dengan gaya vintage modern yang elegan.
           </p>

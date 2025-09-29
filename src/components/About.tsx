@@ -108,7 +108,7 @@ export default function About() {
         {/* CTA */}
         <Reveal delay={0.6}>
           <a
-            href="https://wa.me/6281234567890"
+            href="https://wa.me/62895624560304"
             target="_blank"
             className="inline-block mt-8 bg-cream text-retroGreen px-6 py-3 rounded-xl font-retro shadow-md hover:bg-cream/90 transition"
           >
